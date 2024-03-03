@@ -8,7 +8,7 @@ export default function Homepage() {
 
   return (
     <>
-       <div className={`text-${themee}`} >
+       <div className={`text-${themee==="light"?"dark":"light"}   p-5`} >
         Hello world
       </div> 
 

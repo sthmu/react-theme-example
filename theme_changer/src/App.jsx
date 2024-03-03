@@ -14,12 +14,19 @@ function App() {
   };
 
   return (
+    <div className={`p-5 bg-${theme} `}
+    style={{
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "100% 100%",
+      minHeight: "100vh",
+    }}>
     <themeContext.Provider value={theme}>
-      <div className="container">
+      
         <Navbar changeTheme={changeTheme}></Navbar>
         <Homepage></Homepage>
-      </div>
+      
     </themeContext.Provider>
+    </div>
   );
 }
 
