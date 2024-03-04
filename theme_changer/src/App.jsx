@@ -6,7 +6,7 @@ import themeContext from "./component/DataContext";
 
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   const changeTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
